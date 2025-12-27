@@ -29,6 +29,7 @@ package haven.render;
 import java.util.*;
 import java.util.function.*;
 import haven.Config;
+import haven.Warning;
 
 public class TickList implements RenderList<TickList.TickNode> {
     private final Map<Ticking, Entry> cur = new HashMap<>();
@@ -128,12 +129,18 @@ public class TickList implements RenderList<TickList.TickNode> {
 	    copy = new ArrayList<>(cur.values());
 	}
 	Consumer<Entry> task = ent -> {
-	    if(ent.mon == null) {
-		ent.tick.autotick(dt);
-	    } else {
-		synchronized(ent.mon) {
+	    try {
+		if(ent.mon == null) {
 		    ent.tick.autotick(dt);
+		} else {
+		    synchronized(ent.mon) {
+			ent.tick.autotick(dt);
+		    }
 		}
+	    } catch(RenderTree.SlotRemoved e) {
+		/* Ignore as this is a harmless remove-race on disposal. */
+	    } catch(Exception e) {
+		new Warning(e, "error in tick").issue();
 	    }
 	};
 	if(!Config.par.get())
@@ -148,12 +155,18 @@ public class TickList implements RenderList<TickList.TickNode> {
 	    copy = new ArrayList<>(cur.values());
 	}
 	BiConsumer<Entry, Render> task = (ent, out) -> {
-	    if(ent.mon == null) {
-		ent.tick.autogtick(out);
-	    } else {
-		synchronized(ent.mon) {
+	    try {
+		if(ent.mon == null) {
 		    ent.tick.autogtick(out);
+		} else {
+		    synchronized(ent.mon) {
+			ent.tick.autogtick(out);
+		    }
 		}
+	    } catch(RenderTree.SlotRemoved e) {
+		/* Ignore as this is a harmless remove-race on disposal. */
+	    } catch(Exception e) {
+		new Warning(e, "error in gtick").issue();
 	    }
 	};
 	if(!Config.par.get()) {
