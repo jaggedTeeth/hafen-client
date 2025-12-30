@@ -1,0 +1,222 @@
+{
+  "general": {
+    "TOGGLE_PEACE": {
+      "code": 0,
+      "mods": 0
+    },
+    "FILTER": {
+      "code": 70,
+      "mods": 1
+    },
+    "AGGRO_ONE_PVE": {
+      "code": 0,
+      "mods": 0
+    },
+    "EQUIP_SWORD_N_BOARD": {
+      "code": 0,
+      "mods": 0
+    },
+    "CAM_SNAP_WEST": {
+      "code": 37,
+      "mods": 2
+    },
+    "ACT_REFILL_DRINKS": {
+      "code": 0,
+      "mods": 0
+    },
+    "BOT_OPEN_GATE": {
+      "code": 87,
+      "mods": 1
+    },
+    "OPEN_QUICK_ACTION": {
+      "code": 65,
+      "mods": 1
+    },
+    "TOGGLE_GOB_INFO": {
+      "code": 73,
+      "mods": 1
+    },
+    "ACT_DRINK": {
+      "code": 68,
+      "mods": 1
+    },
+    "ACT_POUCH_0": {
+      "code": 0,
+      "mods": 0
+    },
+    "CAM_SNAP_NORTH": {
+      "code": 38,
+      "mods": 2
+    },
+    "ACT_HAND_1": {
+      "code": 50,
+      "mods": 2
+    },
+    "OPEN_QUICK_CRAFT": {
+      "code": 67,
+      "mods": 1
+    },
+    "CAM_ROTATE_RIGHT": {
+      "code": 39,
+      "mods": 0
+    },
+    "OPEN_ALCHEMY_DB": {
+      "code": 0,
+      "mods": 0
+    },
+    "AGGRO_ALL": {
+      "code": 0,
+      "mods": 0
+    },
+    "CAM_ROTATE_UP": {
+      "code": 38,
+      "mods": 0
+    },
+    "CAM_SNAP_EAST": {
+      "code": 39,
+      "mods": 2
+    },
+    "TOGGLE_TILE_CENTERING": {
+      "code": 90,
+      "mods": 2
+    },
+    "OPEN_CRAFT_DB": {
+      "code": 88,
+      "mods": 1
+    },
+    "TOGGLE_STUDY": {
+      "code": 83,
+      "mods": 1
+    },
+    "AGGRO_ONE_PVP": {
+      "code": 0,
+      "mods": 0
+    },
+    "EQUIP_BOW": {
+      "code": 0,
+      "mods": 0
+    },
+    "TOGGLE_HIDE_TREES": {
+      "code": 74,
+      "mods": 2
+    },
+    "BOT_MOUNT_HORSE": {
+      "code": 81,
+      "mods": 2
+    },
+    "CAM_ROTATE_DOWN": {
+      "code": 40,
+      "mods": 0
+    },
+    "OPEN_QUICK_BUILD": {
+      "code": 66,
+      "mods": 1
+    },
+    "CAM_ZOOM_IN": {
+      "code": 107,
+      "mods": 0
+    },
+    "CAM_ROTATE_LEFT": {
+      "code": 37,
+      "mods": 0
+    },
+    "ACT_BELT": {
+      "code": 51,
+      "mods": 2
+    },
+    "TOGGLE_CURSOR": {
+      "code": 72,
+      "mods": 1
+    },
+    "ACT_POUCH_1": {
+      "code": 0,
+      "mods": 0
+    },
+    "EQUIP_SPEAR": {
+      "code": 0,
+      "mods": 0
+    },
+    "BOT_PICK_ALL_HERBS": {
+      "code": 81,
+      "mods": 1
+    },
+    "SORT_INVENTORY": {
+      "code": 0,
+      "mods": 0
+    },
+    "TOGGLE_GOB_RADIUS": {
+      "code": 82,
+      "mods": 1
+    },
+    "TOGGLE_INSPECT": {
+      "code": 0,
+      "mods": 0
+    },
+    "CAM_RESET": {
+      "code": 36,
+      "mods": 0
+    },
+    "ACT_HAND_0": {
+      "code": 49,
+      "mods": 2
+    },
+    "TOGGLE_GOB_HITBOX": {
+      "code": 72,
+      "mods": 2
+    },
+    "CAM_ZOOM_OUT": {
+      "code": 109,
+      "mods": 0
+    },
+    "OPEN_QUEST_HELP": {
+      "code": 0,
+      "mods": 0
+    },
+    "CAM_SNAP_SOUTH": {
+      "code": 40,
+      "mods": 2
+    }
+  },
+  "combat": [
+    {
+      "code": 49,
+      "mods": 0
+    },
+    {
+      "code": 50,
+      "mods": 0
+    },
+    {
+      "code": 51,
+      "mods": 0
+    },
+    {
+      "code": 52,
+      "mods": 0
+    },
+    {
+      "code": 53,
+      "mods": 0
+    },
+    {
+      "code": 49,
+      "mods": 4
+    },
+    {
+      "code": 50,
+      "mods": 4
+    },
+    {
+      "code": 51,
+      "mods": 4
+    },
+    {
+      "code": 52,
+      "mods": 4
+    },
+    {
+      "code": 53,
+      "mods": 4
+    }
+  ]
+}
